@@ -43,9 +43,9 @@ def play_rps():
     while True:
         playagain = input("\nPlay again?\nY for Yes or\nQ to Quit \n")
         if playagain.lower() not in ["y","q"]:
-            continue
+            continue # jump to begining of while loop for next iteration
         else:
-            break
+            break # end the while loop
     
     if playagain.lower() == "y":
         return play_rps()
